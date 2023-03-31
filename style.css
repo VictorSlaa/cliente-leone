@@ -1,0 +1,95 @@
+*{
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.esquerda{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:flex-end;
+	text-align:right;
+	width: 100vw;
+	height: 70vh;
+	background-image: url(/img/fundo.png);
+	background-position: center;
+	background-size: cover;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+img{
+	position: absolute;
+	bottom: 0;
+	width: 490px;
+}
+
+.vv{
+	position: absolute;
+	font-size: 300px;
+	color: #fc04045c;
+	z-index: -1;
+}
+
+.direita{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	padding-right: 200px;
+	width: 100vw;
+	height: 30vh;
+	background-color: #fc0404ce;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.direita div
+
+.esquerda img{
+	width: 500px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	object-fit: cover;
+	
+}
+
+h1{
+	align-self: flex-end;
+	width: 380px;
+	font-size: 65px;
+}
+
+h1, p{
+	margin-right: 220px;
+	font-weight: bold;
+	z-index: 1000000000000;
+}
+
+corretor{
+	font-size: 34px;
+	font-weight: 600;
+	color: white;
+}
+
+felipe{
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+}
+
+creci{
+	font-size: 32px;
+	color: white;
+
+}
