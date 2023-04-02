@@ -20,7 +20,7 @@
 	text-align:right;
 	width: 100vw;
 	height: 70vh;
-	background-image: url(fundo.png);
+	background-image: url(/img/fundo.png);
 	background-position: center;
 	background-size: cover;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -29,7 +29,7 @@
 img{
 	position: absolute;
 	bottom: 0;
-	width: 490px;
+	max-width: 35%;
 }
 
 .vv{
@@ -50,9 +50,6 @@ img{
 	background-color: #fc0404ce;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-.direita div
-
 .esquerda img{
 	width: 500px;
 	height: auto;
@@ -60,8 +57,7 @@ img{
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	object-fit: cover;
-	
+
 }
 
 h1{
@@ -76,20 +72,70 @@ h1, p{
 	z-index: 1000000000000;
 }
 
-corretor{
+.infos{
+	margin-bottom: 100px;
+}
+
+.corretor{
 	font-size: 34px;
 	font-weight: 600;
 	color: white;
 }
 
-felipe{
+.felipe{
 	font-size: 35px;
 	font-weight: bold;
 	color: white;
 }
 
-creci{
+.creci{
 	font-size: 32px;
 	color: white;
-
 }
+
+.botao{
+	background-color: white;
+	width: 300px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 35px;
+	align-self: center;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-weight: bold;
+	transition: all 0.50s;
+	font-size: 20px;
+	margin-left: 100px;
+}
+
+.botao:hover{
+	background-color: #fc0404ce;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+.img{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	margin: 0px 15px 50px 0px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
