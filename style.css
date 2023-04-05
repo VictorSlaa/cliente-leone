@@ -1,3 +1,4 @@
+
 *{
 	box-sizing:border-box;
 	padding: 0;
@@ -5,7 +6,11 @@
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
-
+body{
+	background-image: url(/img/fundo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .container{
 	display: flex;
@@ -20,23 +25,18 @@
 	text-align:right;
 	width: 100vw;
 	height: 70vh;
-	background-image: url(fundo.png);
 	background-position: center;
 	background-size: cover;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
-img{
-	position: absolute;
-	bottom: 0;
-	max-width: 35%;
-}
 
 .vv{
 	position: absolute;
 	font-size: 300px;
 	color: #fc04045c;
 	z-index: -1;
+
 }
 
 .direita{
@@ -51,29 +51,40 @@ img{
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .esquerda img{
-	width: 500px;
+
+	max-width: 30%;
 	height: auto;
 	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
 
 }
 
+
 h1{
+
 	align-self: flex-end;
 	width: 380px;
 	font-size: 65px;
+	transition: all 1s linear;
 }
 
 h1, p{
 	margin-right: 220px;
 	font-weight: bold;
-	z-index: 1000000000000;
 }
 
 .infos{
-	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	text-align: end;
+	justify-content: center;
+	margin-top: 20px;
 }
 
 .corretor{
@@ -111,31 +122,142 @@ h1, p{
 .botao:hover{
 	background-color: #fc0404ce;
 	color: white;
-	border: 2px solid white;
 	cursor: pointer;
+	width: 100%;
 }
 
-.img{
-	width: 60px;
+.imgw{
+	min-width: 60px;
 	height: 60px;
-	position: absolute;
+	margin: 20px;
+	position:fixed ;
+	bottom: 0;
 	right: 0;
-	margin: 0px 15px 50px 0px; 
+	cursor: pointer;
+	transition: all 1s;
 }
 
+legend{
+	text-align: center;
+	height: 50px;
+	widows: 150px;
+	background-color: white;
+	line-height: 50px;
+}
+
+.leone{
+	min-width: 30%;
+	padding-top: 30px;
+}
+
+.leone1{
+	display: none;
+}
+
+@media (max-width:760px) {
+
+	.esquerda{
+		height: 300px;
+	}
+
+	.infos{
+		width: 100%;
+		height: 120px;
+	}
+
+	.direita{
+		padding-right: 0px ;
+	}
+
+	h1{
+		font-size: 35px;
+		width: 100%;
+		text-align: center;
+		margin-right: 0px;
+	}
+	p{
+		width: 100%;
+		text-align: center;
+		margin-right: 0px;
+
+	}
+
+	.corretor{
+		font-size: 24px;
+		font-weight: 600;
+		color: white;
+	}
+
+	.felipe{
+		font-size: 25px;
+		font-weight: bold;
+		color: white;
+	}
+
+	.creci{
+		font-size: 22px;
+		color: white;
+	}
+
+	.infos{
+		font-size: 25px;
+		text-align: center;
+
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.botao{
+		margin: 0px;
+	}
 
 
+	.esquerda img{
+		display: none;
+		height: auto;
+		padding-top: 30px;
+		z-index: -10;
+	}
+
+	.leone1{
+		width: 60%;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	img, .containerimg, .carrossel{
+		display: none;
+		z-index: -1000000;
+	}
+		
+}	
 
 
+.carrossel{
+	position: absolute;
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+	top: 15%;
+	left: 26%;
+	border: 4px solid #fc04045c;
+	z-index: -1000;
+}
 
+.containerimg{
+	position: relative;
+	display: flex;
+	transition: 0.5s ease-in-out;
+	transform: translateX(0);
+	min-width: 50%;
+	opacity: 0.8;
+}
 
-
-
-
-
-
-
-
-
+.containerimg img{
+	object-fit: cover;
+	height: 300px;
+	min-width: 300px ;
+}
 
 
